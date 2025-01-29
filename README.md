@@ -12,7 +12,10 @@ python-pygments
 neovim
 tmux
 zellij
+ghostty
 ```
+
+Currently all installed via `extra` or `aur` on Arch Linux
 
 ==========================================
 
