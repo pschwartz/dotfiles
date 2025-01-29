@@ -1,4 +1,29 @@
-dotfiles
-========
+# Dotfile management with symlinks using `stow`
 
-My dot files
+Dependencies:
+
+```
+stow
+zsh
+starship
+eza
+zoxide
+python-pygments
+neovim
+tmux
+zellij
+```
+
+==========================================
+
+To install use the following:
+
+```
+./setup.sh
+```
+
+or
+
+```
+stow .
+```
