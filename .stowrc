@@ -1,4 +1,5 @@
 --target=~/.config
+--ignore=HOME
 --ignore=.DS_Store
 --ignore=.stowrc
 --ignore=README.md

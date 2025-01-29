@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-stow .
+stow -v .
 
 if [ -d "HOME" ]; then
   for rc in $(ls HOME); do
