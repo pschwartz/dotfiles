@@ -1,0 +1,23 @@
+default_tmux() {
+  if [ -z $TMUX ]; then
+    tmux new -As0
+  fi
+}
+
+new_tmux() {
+  tmux new -As ${1}
+}
+
+session_tmux() {
+  session=$(for i in $(tmux list-sessions -F '#S'); do
+    echo -e -n "$i\t";
+    echo
+  done | fzf --exact --reverse | cut -f 1)
+  if [[ "$session" != "" ]]; then
+    tmux attach -t "$session"
+  fi
+}
+
+alias dt=default_tmux
+alias nt=new_tmux
+alias st=session_tmux
